@@ -1,0 +1,74 @@
+@import "../../Layout/styles/mq";
+
+.river {
+  position: absolute;
+  width: 41.5%;
+  bottom: -44.5%;
+  right: 0;
+
+  path {
+    animation: wobble 5s infinite;
+  }
+
+  &-bubble {
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 75%;
+    background-color: #fff;
+    position: absolute;
+
+    @include lg {
+      width: 0.5rem;
+      height: 0.5rem;
+    }
+
+    &-1 {
+      bottom: -5vw;
+      right: 1vw;
+      animation: bubble-falling 19s linear infinite;
+    }
+
+    &-2 {
+      bottom: -2vw;
+      right: 6vw;
+      animation: bubble-falling 11s linear infinite;
+    }
+
+    &-3 {
+      bottom: 2vw;
+      right: 4vw;
+      animation: bubble-falling 6s linear infinite;
+    }
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bubble-falling {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  5% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(5vw);
+  }
+}

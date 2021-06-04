@@ -1,0 +1,82 @@
+@use "sass:string";
+@import "../../Layout/styles/mq";
+
+/// Create a wave background given a hexadecimal color
+/// @param {Color} $color - Color in hexadecimal
+/// @example
+///   @include wave(#25B2BC);
+@mixin wave($color) {
+  $without-hash: string.slice("#{$color}", 2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill-opacity='1' d='M773.501 31.9994C544 -22.5 141 4.00007 0.000976562 32.9995L0.0010376 106.999H1445L1445 31.9995C1313.5 50.9998 1025.4 91.8173 773.501 31.9994Z' fill='%23#{$without-hash}' %3E%3C/path%3E%3C/svg%3E%0A");
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 20vh;
+  background-repeat: repeat-x;
+  background-size: 66% auto;
+
+  &:after {
+    content: "";
+    background-color: #235667;
+    height: 18vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0vh;
+
+    @include lg {
+      display: none;
+    }
+  }
+
+  @include lg {
+    height: 4.5vw;
+  }
+
+  &-1 {
+    animation: wave-animation 30s linear infinite;
+    animation-delay: 0s;
+    z-index: 1000;
+    @include wave(#235667);
+  }
+
+  &-2 {
+    animation: wave-animation 30s linear infinite;
+    animation-direction: reverse;
+    animation-delay: 5s;
+    bottom: 2;
+    z-index: 100;
+    opacity: 0.1;
+    @include wave(#235667);
+  }
+
+  &-3 {
+    animation: wave-animation 20s linear infinite;
+    animation-delay: 3s;
+    bottom: 3;
+    z-index: 10;
+    @include wave(#90c4bc);
+  }
+
+  &-4 {
+    animation: wave-animation 10s linear infinite;
+    animation-direction: reverse;
+    animation-delay: 5s;
+    bottom: 2;
+    z-index: 1;
+    opacity: 0.6;
+    @include wave(#90c4bc);
+  }
+}
+
+@keyframes wave-animation {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 66vw;
+  }
+}

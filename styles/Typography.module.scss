@@ -1,0 +1,18 @@
+.typography {
+  color: #333;
+
+  &--paragraph {
+    font-size: 1rem;
+  }
+
+  &--title-5 {
+    font-size: 1.25rem;
+  }
+
+  &--eyebrown {
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+  }
+}

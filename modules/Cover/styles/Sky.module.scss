@@ -1,0 +1,53 @@
+.sun {
+  width: 10vw;
+  height: 10vw;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -2vw;
+  left: 5vw;
+}
+
+.first-cloud {
+  position: absolute;
+  top: 5vw;
+  left: 0;
+  width: 15vw;
+  animation: move-first-cloud 60s linear infinite;
+}
+
+.second-cloud {
+  position: absolute;
+  top: 12vw;
+  right: -5vw;
+  width: 10vw;
+  animation: move-second-cloud 45s linear infinite;
+}
+
+@keyframes move-first-cloud {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 20vw;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes move-second-cloud {
+  0% {
+    right: -5vw;
+  }
+
+  50% {
+    right: 20vw;
+  }
+
+  100% {
+    right: -5vw;
+  }
+}

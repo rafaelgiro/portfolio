@@ -1,0 +1,89 @@
+@import "../../Layout/styles/mq";
+
+.left-side-icons {
+  grid-column: 1/5;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 2rem);
+
+  @include lg {
+    grid-column: 2/3;
+    grid-row: 1;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 1.5rem;
+    justify-self: flex-start;
+    transition: opacity 0.2s ease-out;
+
+    @include lg {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    @include lg {
+      flex-direction: column;
+    }
+
+    a {
+      width: min-content;
+    }
+
+    svg {
+      width: 1.5rem;
+      margin: 1rem;
+
+      @include lg {
+        margin: 1rem 0;
+      }
+    }
+
+    &--linkedin,
+    &--github,
+    &--codepen {
+      path {
+        transition: fill 0.2s ease-out;
+      }
+    }
+
+    &--linkedin {
+      &:hover {
+        path {
+          fill: #0077b5;
+        }
+      }
+    }
+
+    &--github {
+      &:hover {
+        path {
+          fill: #6e5494;
+        }
+      }
+    }
+
+    &--codepen {
+      &:hover {
+        path {
+          fill: #0ebeff;
+        }
+      }
+    }
+  }
+}

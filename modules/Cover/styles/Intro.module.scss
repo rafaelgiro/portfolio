@@ -1,0 +1,21 @@
+@import "../../Layout/styles/mq";
+
+.intro {
+  grid-column: 1/5;
+  grid-row: 2;
+  z-index: 10;
+  align-self: center;
+  position: relative;
+  text-align: center;
+
+  @include sm {
+    grid-column: 2/4;
+  }
+
+  @include lg {
+    grid-column: 9/12;
+    grid-row: 1;
+    text-align: left;
+    margin: 0;
+  }
+}

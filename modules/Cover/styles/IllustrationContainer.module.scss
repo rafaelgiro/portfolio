@@ -1,0 +1,20 @@
+@import "../../Layout/styles/mq";
+
+.illustration-container {
+  grid-column: 1/5;
+  grid-row: 3;
+  position: relative;
+  height: fit-content;
+  margin: auto 8vw;
+  margin-top: 3vh;
+
+  @include sm {
+    margin: auto 20vw;
+  }
+
+  @include lg {
+    grid-column: 5/9;
+    grid-row: 1;
+    margin: auto 0;
+  }
+}
