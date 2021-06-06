@@ -19,7 +19,7 @@ export const LeftSideIcons = () => {
           <LinkedIn />
         </a>
         <a
-          href="https://github.com/RafaelGiro/5pots"
+          href="https://github.com/RafaelGiro"
           target="blank"
           rel="noreferrer"
           className={styles["social--github"]}
