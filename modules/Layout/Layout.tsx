@@ -8,9 +8,9 @@ export const Layout = (props: LayoutProps) => {
   const { children } = props;
   const [theme, setTheme] = useState<ThemesType>("morning");
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setTheme(getTime());
-  });
+  }, []);
 
   return (
     <div className={theme}>

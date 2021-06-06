@@ -7,27 +7,24 @@ import { Layout } from "../modules/Layout";
 
 import { ThemesType } from "../modules/Layout/interfaces";
 
-interface Props {
-  initialTheme: ThemesType;
-}
-
-const Home: NextPage<Props> = ({ initialTheme }) => {
+const Home: NextPage = () => {
   return (
-    <Layout initialTheme={initialTheme}>
+    <Layout>
       <Head>
         <title>Rafael Giro</title>
-        <meta name="description" content="Portfolio" />
+        <meta property="og:title" content="Rafael Giro" />
+        <meta
+          property="og:description"
+          content="Hi There! I'm a frontend developer and this is my personal (work in progress) Portfolio!"
+        />
+        <meta property="og:image" content="/thumbnail.jpg" />
+        <meta property="og:url" content="http://rafaelgiro.dev" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Cover />
     </Layout>
   );
-};
-
-Home.getInitialProps = async ({ req }) => {
-  console.log(req?.headers["x-real-ip"]);
-  return { initialTheme: "morning" };
 };
 
 export default Home;
