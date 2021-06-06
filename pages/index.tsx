@@ -17,8 +17,13 @@ const Home: NextPage = () => {
           property="og:description"
           content="Hi There! I'm a frontend developer and this is my personal (work in progress) Portfolio!"
         />
+        <meta
+          name="description"
+          content="Hi There! I'm a frontend developer and this is my personal (work in progress) Portfolio!"
+        />
         <meta property="og:image" content="/thumbnail.jpg" />
         <meta property="og:url" content="http://rafaelgiro.dev" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
