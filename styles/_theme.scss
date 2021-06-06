@@ -15,7 +15,7 @@
   --color-water-dark: #66cca8;
   --color-font-primary: #333333;
   --position-top-circle: -2vw;
-  --position-left-circle: 10vw;
+  --position-left-circle: 20vw;
   --size-circle: 10vw;
   --size-cloud-1: 15vw;
   --visibility-cloud-2: visible;
@@ -38,8 +38,8 @@
   --color-water-medium: #35f5f3;
   --color-water-dark: #08d9d5;
   --color-font-primary: #333333;
-  --position-top-circle: -4vw;
-  --position-left-circle: 7.5vw;
+  --position-top-circle: -6vw;
+  --position-left-circle: 12vw;
   --size-circle: 7.5vw;
   --size-cloud-1: 15vw;
   --visibility-cloud-2: visible;
@@ -100,4 +100,5 @@
 .night {
   background-color: var(--color-sky);
   height: 100%;
+  transition: background-color 0.5s ease-out;
 }

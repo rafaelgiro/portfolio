@@ -6,6 +6,7 @@
   position: absolute;
   top: var(--position-top-circle);
   left: var(--position-left-circle);
+  transition: all 0.5s ease-out;
 
   & > div {
     position: absolute;

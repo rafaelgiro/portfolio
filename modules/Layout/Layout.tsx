@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 import { ThemeContext } from "./context/ThemeContext";
+import { getTime } from "./helpers";
 import { LayoutProps, ThemesType } from "./interfaces";
 
 export const Layout = (props: LayoutProps) => {
   const { children } = props;
-  const [theme, setTheme] = useState<ThemesType>("night");
+  const [theme, setTheme] = useState<ThemesType>("morning");
+
+  useLayoutEffect(() => {
+    setTheme(getTime());
+  });
 
   return (
     <div className={theme}>

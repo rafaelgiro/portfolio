@@ -8,9 +8,24 @@
   justify-content: flex-end;
   align-items: center;
   height: min-content;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.15s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   svg {
     fill: var(--color-font-primary);
+    margin-left: 0.5rem;
   }
 
   @include lg {
