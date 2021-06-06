@@ -8,7 +8,7 @@ export const Triangle = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M226 0L451.167 390H0.833389L226 0Z" fill="#FFD5C3" />
+      <path d="M226 0L451.167 390H0.833389L226 0Z" />
     </svg>
   );
 };

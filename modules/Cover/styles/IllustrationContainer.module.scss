@@ -6,7 +6,7 @@
   position: relative;
   height: fit-content;
   margin: auto 8vw;
-  margin-top: 3vh;
+  transform: translateY(-5vh);
 
   @include sm {
     margin: auto 20vw;
@@ -16,5 +16,6 @@
     grid-column: 5/9;
     grid-row: 1;
     margin: auto 0;
+    transform: none;
   }
 }

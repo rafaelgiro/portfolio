@@ -1,0 +1,63 @@
+@import "../../Layout/styles/mq";
+
+.centaurus {
+  grid-column: 3/6;
+  grid-row: 1;
+  width: 100%;
+  margin-top: 8vw;
+  visibility: var(--visibility-constalation);
+  display: none;
+
+  @include lg {
+    display: inline;
+  }
+}
+
+.scorpius {
+  grid-column: 9/11;
+  grid-row: 1;
+  width: 100%;
+  margin-top: 7vw;
+  visibility: var(--visibility-constalation);
+  display: none;
+
+  @include lg {
+    display: inline;
+  }
+}
+
+.scorpius,
+.centaurus {
+  circle {
+    opacity: 0.5;
+    animation: star-blink 4s ease-out infinite;
+
+    &:nth-child(3n + 3) {
+      animation-delay: 0.5s;
+      animation-duration: 6s;
+    }
+  }
+
+  path {
+    opacity: 0.4;
+    transition: opacity 2s ease-out;
+  }
+
+  &:hover {
+    path {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes star-blink {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

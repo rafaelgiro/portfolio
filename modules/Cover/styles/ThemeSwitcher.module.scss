@@ -1,0 +1,24 @@
+@import "../../Layout/styles/mq";
+
+.theme-switcher {
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: min-content;
+
+  svg {
+    fill: var(--color-font-primary);
+  }
+
+  @include lg {
+    position: relative;
+    top: 0;
+    right: 0;
+    grid-column: 10/12;
+    grid-row: 1;
+    margin-top: 2.5rem;
+  }
+}

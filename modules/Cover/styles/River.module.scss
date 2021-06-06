@@ -10,6 +10,18 @@
     animation: wobble 5s infinite;
   }
 
+  &__dark {
+    fill: var(--color-water-dark);
+  }
+
+  &__medium {
+    fill: var(--color-water-medium);
+  }
+
+  &__light {
+    fill: var(--color-water-light);
+  }
+
   &-bubble {
     width: 0.25rem;
     height: 0.25rem;

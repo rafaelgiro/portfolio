@@ -5,6 +5,7 @@
   width: 5vw;
   path {
     animation: fly 0s linear infinite;
+    fill: var(--color-birds);
 
     &:nth-child(1) {
       animation-duration: 5s;

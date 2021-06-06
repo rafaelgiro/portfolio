@@ -1,0 +1,103 @@
+.morning {
+  --color-sky: #fff4e4;
+  --color-triangle: #ffe6c3;
+  --color-circle: #ffffff;
+  --color-circle-details: transparent;
+  --color-birds: #321112;
+  --color-terrain-1: #321112;
+  --color-terrain-2: #a84841;
+  --color-terrain-3: #bb5040;
+  --color-tree-1: #321112;
+  --color-tree-2: #641f1e;
+  --color-tree-3: #ffb87e;
+  --color-water-light: #84dca2;
+  --color-water-medium: #57ccb8;
+  --color-water-dark: #66cca8;
+  --color-font-primary: #333333;
+  --position-top-circle: -2vw;
+  --position-left-circle: 10vw;
+  --size-circle: 10vw;
+  --size-cloud-1: 15vw;
+  --visibility-cloud-2: visible;
+  --visibility-constalation: hidden;
+}
+
+.noon {
+  --color-sky: #e0f7ed;
+  --color-triangle: #bfe6c7;
+  --color-circle: #ffd983;
+  --color-circle-details: transparent;
+  --color-birds: #01373e;
+  --color-terrain-1: #01373e;
+  --color-terrain-2: #366c50;
+  --color-terrain-3: #ff9f47;
+  --color-tree-1: #01373e;
+  --color-tree-2: #b4d064;
+  --color-tree-3: #ffcb4f;
+  --color-water-light: #a2faf0;
+  --color-water-medium: #35f5f3;
+  --color-water-dark: #08d9d5;
+  --color-font-primary: #333333;
+  --position-top-circle: -4vw;
+  --position-left-circle: 7.5vw;
+  --size-circle: 7.5vw;
+  --size-cloud-1: 15vw;
+  --visibility-cloud-2: visible;
+  --visibility-constalation: hidden;
+}
+
+.afternoon {
+  --color-sky: #ffefe4;
+  --color-triangle: #ffd5c3;
+  --color-circle: #ffffff;
+  --color-circle-details: transparent;
+  --color-birds: #311a3d;
+  --color-terrain-1: #311a3d;
+  --color-terrain-2: #733d57;
+  --color-terrain-3: #f9bc85;
+  --color-tree-1: #311a3d;
+  --color-tree-2: #982b51;
+  --color-tree-3: #ffe1b6;
+  --color-water-light: #aaccc4;
+  --color-water-medium: #90c4bc;
+  --color-water-dark: #235667;
+  --color-font-primary: #333333;
+  --position-top-circle: -2vw;
+  --position-left-circle: 5vw;
+  --size-circle: 10vw;
+  --size-cloud-1: 15vw;
+  --visibility-cloud-2: visible;
+  --visibility-constalation: hidden;
+}
+
+.night {
+  --color-sky: #151c24;
+  --color-triangle: #1f232f;
+  --color-circle: #ffffff;
+  --color-circle-details: #f1f1f1;
+  --color-birds: transparent;
+  --color-terrain-1: #111111;
+  --color-terrain-2: #111111;
+  --color-terrain-3: #111111;
+  --color-tree-1: #111111;
+  --color-tree-2: #111111;
+  --color-tree-3: #111111;
+  --color-water-light: #119494;
+  --color-water-medium: #1c6974;
+  --color-water-dark: #1c2c41;
+  --color-font-primary: #f2f2f2;
+  --position-top-circle: -5vw;
+  --position-left-circle: 11vw;
+  --size-circle: 7.5vw;
+  --size-cloud-1: 10vw;
+  --visibility-cloud-2: hidden;
+  --visibility-constalation: visible;
+}
+
+.morning,
+.noon,
+.afternoon,
+.night {
+  background-color: var(--color-sky);
+  height: 100%;
+}

@@ -1,23 +1,53 @@
-.sun {
-  width: 10vw;
-  height: 10vw;
+.circle {
+  width: var(--size-circle);
+  height: var(--size-circle);
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -2vw;
-  left: 5vw;
+  top: var(--position-top-circle);
+  left: var(--position-left-circle);
+
+  & > div {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--color-circle-details);
+  }
+
+  &__details {
+    &--1 {
+      width: 2.5vw;
+      height: 2.5vw;
+      top: 2vw;
+      left: 0.75vw;
+    }
+
+    &--2 {
+      width: 1.5vw;
+      height: 1.5vw;
+      top: 1.5vw;
+      left: 4vw;
+    }
+
+    &--3 {
+      width: 0.75vw;
+      height: 0.75vw;
+      top: 5vw;
+      left: 2vw;
+    }
+  }
 }
 
 .first-cloud {
   position: absolute;
   top: 5vw;
   left: 0;
-  width: 15vw;
+  width: var(--size-cloud-1);
   animation: move-first-cloud 60s linear infinite;
 }
 
 .second-cloud {
   position: absolute;
+  visibility: var(--visibility-cloud-2);
   top: 12vw;
   right: -5vw;
   width: 10vw;

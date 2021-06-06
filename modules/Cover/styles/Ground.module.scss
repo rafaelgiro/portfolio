@@ -9,10 +9,30 @@
   animation: wind 8s ease-out infinite;
   &--1 {
     animation-delay: -0.5s;
+    fill: var(--color-tree-1);
   }
 
   &--2 {
     animation-delay: -0.25s;
+    fill: var(--color-tree-2);
+  }
+
+  &--3 {
+    fill: var(--color-tree-3);
+  }
+}
+
+.terrain {
+  &--1 {
+    fill: var(--color-terrain-1);
+  }
+
+  &--2 {
+    fill: var(--color-terrain-1);
+  }
+
+  &--3 {
+    fill: var(--color-terrain-1);
   }
 }
 

@@ -32,6 +32,10 @@
       top: 2rem;
       left: 0;
     }
+
+    path {
+      stroke: var(--color-font-primary);
+    }
   }
 
   .social {
@@ -45,9 +49,17 @@
       width: min-content;
     }
 
+    path {
+      fill: var(--color-font-primary);
+    }
+
     svg {
       width: 1.5rem;
       margin: 1rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
 
       @include lg {
         margin: 1rem 0;

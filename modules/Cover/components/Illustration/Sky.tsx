@@ -3,7 +3,11 @@ import styles from "../../styles/Sky.module.scss";
 export const Sky = () => {
   return (
     <>
-      <div className={styles.sun} />
+      <div className={styles.circle}>
+        <div className={styles["circle__details--1"]} />
+        <div className={styles["circle__details--2"]} />
+        <div className={styles["circle__details--3"]} />
+      </div>
       <svg
         className={styles["first-cloud"]}
         viewBox="0 0 169 46"

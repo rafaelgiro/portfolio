@@ -4,8 +4,8 @@
 .cover {
   @include default-grid;
   width: 100vw;
-  height: 80vh;
-  align-content: center;
+  height: 100%;
+  overflow: hidden;
 
   @include lg {
     height: 100vh;

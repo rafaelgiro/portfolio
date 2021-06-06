@@ -15,22 +15,9 @@
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 20vh;
+  height: 2vh;
   background-repeat: repeat-x;
   background-size: 66% auto;
-
-  &:after {
-    content: "";
-    background-color: #235667;
-    height: 18vh;
-    width: 100%;
-    position: absolute;
-    bottom: 0vh;
-
-    @include lg {
-      display: none;
-    }
-  }
 
   @include lg {
     height: 4.5vw;
@@ -40,7 +27,6 @@
     animation: wave-animation 30s linear infinite;
     animation-delay: 0s;
     z-index: 1000;
-    @include wave(#235667);
   }
 
   &-2 {
@@ -50,7 +36,6 @@
     bottom: 2;
     z-index: 100;
     opacity: 0.1;
-    @include wave(#235667);
   }
 
   &-3 {
@@ -58,7 +43,6 @@
     animation-delay: 3s;
     bottom: 3;
     z-index: 10;
-    @include wave(#90c4bc);
   }
 
   &-4 {
@@ -68,7 +52,66 @@
     bottom: 2;
     z-index: 1;
     opacity: 0.6;
-    @include wave(#90c4bc);
+  }
+
+  &.morning {
+    $dark: #66cca8;
+    $light: #57ccb8;
+
+    &.wave-1,
+    &.wave-2 {
+      @include wave($dark);
+    }
+
+    &.wave-3,
+    &.wave-4 {
+      @include wave($light);
+    }
+  }
+
+  &.noon {
+    $dark: #08d9d5;
+    $light: #35f5f3;
+
+    &.wave-1,
+    &.wave-2 {
+      @include wave($dark);
+    }
+
+    &.wave-3,
+    &.wave-4 {
+      @include wave($light);
+    }
+  }
+
+  &.afternoon {
+    $dark: #235667;
+    $light: #90c4bc;
+
+    &.wave-1,
+    &.wave-2 {
+      @include wave($dark);
+    }
+
+    &.wave-3,
+    &.wave-4 {
+      @include wave($light);
+    }
+  }
+
+  &.night {
+    $dark: #1c2c41;
+    $light: #119494;
+
+    &.wave-1,
+    &.wave-2 {
+      @include wave($dark);
+    }
+
+    &.wave-3,
+    &.wave-4 {
+      @include wave($light);
+    }
   }
 }
 

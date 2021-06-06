@@ -1,4 +1,8 @@
 .triangle {
   width: 100%;
   height: auto;
+
+  path {
+    fill: var(--color-triangle);
+  }
 }
