@@ -2,10 +2,9 @@ import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
 
-import { Cover } from "../modules/Cover";
 import { Layout } from "../modules/Layout";
-
-import { ThemesType } from "../modules/Layout/interfaces";
+import { Cover } from "../modules/Cover";
+import { About } from "../modules/About";
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +27,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Cover />
+      <About />
     </Layout>
   );
 };

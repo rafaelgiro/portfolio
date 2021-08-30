@@ -1,4 +1,9 @@
-type typescaleOptions = "paragraph" | "title-5" | "eyebrown";
+type typescaleOptions =
+  | "title-1"
+  | "title-4"
+  | "title-5"
+  | "paragraph"
+  | "eyebrown";
 
 export interface TypographyProps
   extends Pick<

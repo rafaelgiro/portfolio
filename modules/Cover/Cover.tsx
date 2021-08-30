@@ -3,9 +3,9 @@ import { IllustrationContainer, Wave } from "./components/Illustration";
 import { LeftSideIcons } from "./components/LeftSideIcons/LeftSideIcons";
 import { Centaurus, Scorpius } from "./components/Constelations";
 import { Mail } from "./components/Mail";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 import styles from "./styles/Cover.module.scss";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 export const Cover = () => {
   return (

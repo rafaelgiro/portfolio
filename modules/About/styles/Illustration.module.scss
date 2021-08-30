@@ -1,0 +1,101 @@
+@import "../../Layout/styles/mq";
+
+.illustration {
+  grid-column: 1/12;
+  grid-row: 1;
+  position: relative;
+  padding: 0 2rem;
+
+  @include lg {
+    grid-column: 2/6;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    z-index: 10;
+    position: relative;
+  }
+
+  .smoke {
+    & > path:first-child {
+      opacity: 0.2;
+    }
+  }
+
+  .whale {
+    &--lighter {
+      fill: var(--color-sky);
+    }
+
+    &--darker {
+      fill: var(--color-triangle);
+    }
+  }
+
+  .flow {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include lg {
+      width: 120%;
+    }
+
+    path {
+      stroke: var(--color-water-light);
+    }
+
+    &--small {
+      stroke-dasharray: 393.8;
+      stroke-dashoffset: 393.8;
+      animation: draw-flow-small 25s linear infinite;
+
+      &:last-of-type {
+        animation-duration: 28s;
+        opacity: 0.1;
+      }
+    }
+
+    &--big {
+      stroke-dasharray: 379.95;
+      stroke-dashoffset: 379.95;
+      animation: draw-flow-big 25s linear infinite;
+
+      &:first-child {
+        opacity: 0.5;
+        animation-duration: 32s;
+      }
+    }
+  }
+}
+
+@keyframes draw-flow-small {
+  0% {
+    stroke-dashoffset: 393.8;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -393.8;
+  }
+}
+
+@keyframes draw-flow-big {
+  0% {
+    stroke-dashoffset: 759.9;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -759.9;
+  }
+}

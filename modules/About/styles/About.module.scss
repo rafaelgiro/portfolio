@@ -1,0 +1,7 @@
+@import "../../Layout/styles/Layout.module.scss";
+.about {
+  padding: 2rem 0 !important;
+  background-color: var(--color-water-dark);
+  @include default-grid;
+  align-items: center;
+}

@@ -1,0 +1,51 @@
+@import "../../Layout/styles/mq";
+
+.me {
+  z-index: 100;
+  grid-column: 1/12;
+  position: relative;
+  padding: 0 2rem;
+  text-align: center;
+
+  @include lg {
+    grid-column: 6/12;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  &__title {
+    color: var(--color-sky);
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div {
+      margin: 0.5rem 0;
+      flex-basis: 100%;
+
+      @include lg {
+        flex-basis: 50%;
+        &:nth-child(n + 3) {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
