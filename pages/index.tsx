@@ -5,6 +5,7 @@ import React from "react";
 import { Layout } from "../modules/Layout";
 import { Cover } from "../modules/Cover";
 import { About } from "../modules/About";
+import { BlogPreview } from "../modules/BlogPreview";
 
 const Home: NextPage = () => {
   return (
@@ -25,9 +26,9 @@ const Home: NextPage = () => {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Cover />
       <About />
+      <BlogPreview />
     </Layout>
   );
 };
