@@ -8,7 +8,7 @@
 @mixin curve($color) {
   $without-hash: string.slice("#{$color}", 2);
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 30'  fill-opacity='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M260 24.5C229.058 27.757 73.8333 26.3333 0 24.5V0L1440 0.5V24.5C1358 10.9999 939 24.5 878 24.5C817 24.5 708 36.2463 581.5 24.5C511.5 18 374 12.5 260 24.5Z' fill='%23#{$without-hash}'/%3E%3C/svg%3E%0A");
-  background-size: 300%;
+  background-size: 320%;
   @include lg {
     background-size: auto;
   }
