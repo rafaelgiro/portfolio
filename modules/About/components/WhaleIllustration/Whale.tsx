@@ -118,9 +118,9 @@ export const Whale = () => {
 <ellipse cx="348.5" cy="114.455" rx="5" ry="2" fill="white"/>
 <ellipse cx="353.5" cy="307.455" rx="5" ry="2" fill="white"/>
 <ellipse cx="383.5" cy="325.455" rx="5" ry="2" fill="white"/>
-<line x1="89.5" y1="10.4549" x2="89.5" y2="48.4549" stroke="white" strokeWidth="2" stroke-linecap="round"/>
-<line x1="287.5" y1="74.4549" x2="287.5" y2="112.455" stroke="white" strokeWidth="2" stroke-linecap="round"/>
-<line x1="384.5" y1="251.455" x2="384.5" y2="289.455" stroke="white" strokeWidth="2" stroke-linecap="round"/>
+<line x1="89.5" y1="10.4549" x2="89.5" y2="48.4549" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+<line x1="287.5" y1="74.4549" x2="287.5" y2="112.455" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+<line x1="384.5" y1="251.455" x2="384.5" y2="289.455" stroke="white" strokeWidth="2" strokeLinecap="round"/>
 </g>
 <circle r="91" transform="matrix(-1 0 0 1 523.055 412)" fill="white" stroke="black" strokeWidth="5"/>
 <path d="M316.555 531.5C366.955 541.9 397.555 514.833 407.055 498C398.704 496.532 385.572 494.74 375.055 494.494C366.473 494.294 359.634 495.124 358.555 498C356.155 504.4 329.889 513.333 316.555 519C310.722 523.167 302.555 531.5 316.555 531.5Z" fill="#FFE6C3"/>

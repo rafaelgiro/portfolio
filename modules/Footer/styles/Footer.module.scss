@@ -1,0 +1,11 @@
+.footer {
+  svg {
+    fill: var(--color-triangle);
+    margin-bottom: -0.4rem;
+  }
+
+  &__content {
+    height: 10rem;
+    background-color: var(--color-triangle);
+  }
+}

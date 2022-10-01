@@ -86,7 +86,7 @@ export const Smoke = () => {
           y2="48.4549"
           stroke="white"
           strokeWidth="2"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
         <line
           x1="283.5"
@@ -95,7 +95,7 @@ export const Smoke = () => {
           y2="112.455"
           stroke="white"
           strokeWidth="2"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
         <line
           x1="380.5"
@@ -104,7 +104,7 @@ export const Smoke = () => {
           y2="289.455"
           stroke="`white`"
           strokeWidth="2"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
       </g>
     </>

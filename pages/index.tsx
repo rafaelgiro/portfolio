@@ -6,6 +6,7 @@ import { Layout } from "../modules/Layout";
 import { Cover } from "../modules/Cover";
 import { About } from "../modules/About";
 import { BlogPreview } from "../modules/BlogPreview";
+import { Footer } from "../modules/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
       <Cover />
       <About />
       <BlogPreview />
+      <Footer />
     </Layout>
   );
 };

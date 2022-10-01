@@ -11,11 +11,15 @@
 }
 
 .blog-preview {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .title {
-    margin: 0 auto;
     position: relative;
     width: min-content;
     padding: 2rem;
+    text-align: center;
 
     h2 {
       color: var(--color-water-dark);

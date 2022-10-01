@@ -14,6 +14,9 @@ export const BlogPreview = () => {
         <Typography component="h2" typeScale="title-1">
           BLOG
         </Typography>
+        <Typography component="h2" typeScale="eyebrown">
+          (coming soon)
+        </Typography>
       </div>
     </div>
   );
