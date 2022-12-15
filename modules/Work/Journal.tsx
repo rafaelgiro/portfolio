@@ -43,10 +43,10 @@ export const Journal = () => {
           </a>
         </Typography>
         <Typography typeScale="paragraph">
-          A Colorful <strong>Design System</strong> with psychedelic effects
-          using only css. Built with <strong>Turborepo</strong>, created inside
-          a <strong>Storybook</strong> and hosting the documentation at{" "}
-          <strong>Vercel</strong> with <strong>Next.js</strong>.
+          <strong>Mobile app</strong> for planning League of Legends matches
+          based on <strong>real-time</strong>
+          match data. Built with <strong>React Native</strong> and{" "}
+          <strong>Expo.</strong>
         </Typography>
       </div>
     </div>

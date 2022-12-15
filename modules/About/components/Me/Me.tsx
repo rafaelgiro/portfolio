@@ -28,7 +28,7 @@ export const Me = () => {
       <div className={styles.me__skills}>
         <div>
           <Typography component="h3" typeScale="title-4">
-            THE BASICS - 5.5 years
+            THE BASICS - 6.5 years
           </Typography>
           <Typography component="p" typeScale="paragraph">
             Javascript, CSS and HTML
@@ -36,7 +36,7 @@ export const Me = () => {
         </div>
         <div>
           <Typography component="h3" typeScale="title-4">
-            BACKEND - 3 years
+            BACKEND - 4 years
           </Typography>
           <Typography component="p" typeScale="paragraph">
             Node.js, Express, MongoDB and Docker
@@ -44,7 +44,7 @@ export const Me = () => {
         </div>
         <div>
           <Typography component="h3" typeScale="title-4">
-            FRONTEND - 4 years
+            FRONTEND - 5 years
           </Typography>
           <Typography component="p" typeScale="paragraph">
             React, Nextjs, Redux, <strong>Design Systems</strong>, Figma and{" "}

@@ -26,7 +26,7 @@ export const Lucy = () => {
       </Typography>
       <Typography typeScale="paragraph">
         A Colorful <strong>Design System</strong> with psychedelic effects using
-        only css. Built with <strong>Turborepo</strong>, created inside a{" "}
+        only CSS. Built with <strong>Turborepo</strong>, created inside a{" "}
         <strong>Storybook</strong> and hosting the documentation at{" "}
         <strong>Vercel</strong> with <strong>Next.js</strong>.
       </Typography>
