@@ -1,0 +1,54 @@
+@import "../../Layout/styles/mq";
+
+.journal {
+  padding: 2rem;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+
+  @include lg {
+    grid-column: 3/11;
+    flex-direction: row;
+  }
+
+  &__image {
+    position: relative;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+
+    svg {
+      position: absolute;
+      width: 91%;
+      height: 100%;
+      top: 0rem;
+      left: 0rem;
+      z-index: 20;
+
+      @include lg {
+        width: 101%;
+        height: 101%;
+      }
+    }
+
+    img {
+      position: relative;
+      z-index: 10;
+      width: 90%;
+
+      @include lg {
+        width: 15vw;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__icon {
+    fill: var(--color-font-primary);
+    margin-left: 0.5rem;
+  }
+}

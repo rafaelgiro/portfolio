@@ -5,7 +5,7 @@ import React from "react";
 import { Layout } from "../modules/Layout";
 import { Cover } from "../modules/Cover";
 import { About } from "../modules/About";
-import { BlogPreview } from "../modules/BlogPreview";
+import { Work } from "../modules/Work";
 import { Footer } from "../modules/Footer";
 
 const Home: NextPage = () => {
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
       </Head>
       <Cover />
       <About />
-      <BlogPreview />
+      <Work />
       <Footer />
     </Layout>
   );

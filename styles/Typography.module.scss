@@ -16,6 +16,15 @@
     }
   }
 
+  &--title-2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+
+    @include lg {
+      font-size: 3rem;
+    }
+  }
+
   &--title-4 {
     font-size: 1.5rem;
     font-weight: 800;
