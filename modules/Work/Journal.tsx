@@ -44,9 +44,8 @@ export const Journal = () => {
         </Typography>
         <Typography typeScale="paragraph">
           <strong>Mobile app</strong> for planning League of Legends matches
-          based on <strong>real-time</strong>
-          match data. Built with <strong>React Native</strong> and{" "}
-          <strong>Expo.</strong>
+          based on <strong>real-time</strong> match data. Built with{" "}
+          <strong>React Native</strong> and <strong>Expo.</strong>
         </Typography>
       </div>
     </div>
