@@ -20,7 +20,7 @@ export const Me = () => {
         Currently based at São Carlos, Brazil, I'm working as a Senior Frontend
         developer creating great user experiences. You can checkout my full
         resume{" "}
-        <a href="/resume.pdf" target="blank">
+        <a href="/cv.pdf" target="blank">
           here
         </a>
         , and a summary of my professional work down below:
