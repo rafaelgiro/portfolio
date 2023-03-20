@@ -48,7 +48,7 @@ export const Me = () => {
           </Typography>
           <Typography component="p" typeScale="paragraph">
             React, Nextjs, Redux, <strong>Design Systems</strong>, Figma and{" "}
-            <strong>Micro Fontends</strong>
+            <strong>Micro Frontends</strong>
           </Typography>
         </div>
         <div>
