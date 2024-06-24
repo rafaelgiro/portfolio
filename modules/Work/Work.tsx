@@ -24,7 +24,6 @@ export const Work = () => {
       <div className={styles.works}>
         <FivePots />
         <Lucy />
-        <Journal />
       </div>
     </div>
   );

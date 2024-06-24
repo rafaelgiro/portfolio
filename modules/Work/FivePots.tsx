@@ -25,7 +25,11 @@ export const FivePots = () => {
           />
         </svg>
       </div>
-      <a href="https://lol.5pots.com/" target="blank" rel="noreferrer">
+      <a
+        href="https://timeline-lol-rafaelgiro.vercel.app/"
+        target="blank"
+        rel="noreferrer"
+      >
         <Typography typeScale="eyebrown" component="h3">
           GO TO WEBSITE
         </Typography>
